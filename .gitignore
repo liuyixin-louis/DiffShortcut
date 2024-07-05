@@ -21,7 +21,6 @@ others
 notebooks/
 weights
 test/*
-*.png
 dataset_bk
 
 IP-Adapter/sdxl_models
