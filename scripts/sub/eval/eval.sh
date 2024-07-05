@@ -1,0 +1,2 @@
+
+python3 $ADB_PROJECT_ROOT/diffshortcut/eval_main.py --exp_name $score_exp_name --exp_config $score_exp_config --note $note --clean_ref_db $CLEAN_REF --inference_prompts "$eval_prompts" --class_name $class_name --final_save_path $GEN_IMG_OUTPUT_DIR --fy_type $ft_type --instance_name "$instance_name" --dataset_name $dataset_name --img_for_train $INSTANCE_DIR_CHECK_DEFENSED
