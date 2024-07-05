@@ -34,12 +34,12 @@ conda install -c conda-forge dlib -y
 ```shell
 # activate your conda env
 export input_dir="./example/"
-export output_dir_code="./output/"
-export output_dir="./output/"
+export output_dir_code="./output/final_results"
+export output_dir="./output/final_purified/"
 export class_name='person'
 python3 diffshortcut/defenses/CodeFormer/inference_codeformer.py -w 0.5 --input_path "$input_dir" -o "$output_dir_code" 
-python3 diffshortcut/defenses/sr.py --input_dir $output_dir_code/final_results/ --output_dir $output_dir --class_name $class_name
-# you will get the purified images in $output_dir
+python3 diffshortcut/defenses/sr.py --input_dir $output_dir_code --output_dir $output_dir --class_name $class_name
+# you will get the purified images in $output_dir with the same file name as the original one  
 ```
 
 ## Data and Checkpoint Dependencies
