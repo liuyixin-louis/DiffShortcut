@@ -17,7 +17,7 @@ export PYTHONPATH=$PYTHONPATH$:$ADB_PROJECT_ROOT
 ```shell
 # python and pytorch, tested under python 3.10 and pytorch 1.13.1
 conda create -n diffshortcut python=3.10
-conda install pytorch==1.13.1 torchvision==0.14.1 pytorch-cuda=11.6 -c pytorch -c nvidia -y
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 pip install -e . --ignore-installed
 pip install ftfy regex tqdm git+https://github.com/openai/CLIP.git
 pip install git+https://github.com/huggingface/diffusers.git
